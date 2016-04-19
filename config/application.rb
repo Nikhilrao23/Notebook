@@ -21,6 +21,7 @@ module Notebook
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    RAILS_ENV=production bundle exec rake assets:precompile
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.initialize_on_precompile = false
   end
